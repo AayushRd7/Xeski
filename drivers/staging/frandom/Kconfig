@@ -1,5 +1,5 @@
 config FRANDOM
-	tristate "Frandom RNG driver"
+	boolean "Frandom RNG driver"
 	help
 	  Frandom is a Linux kernel random number generator, which
 	  is 10-50 times faster than what you get from Linux' built-in
