@@ -23,5 +23,5 @@ before_script:
   - git clone https://github.com/AayushRd7/Xeski.git -b xos-7.1
 
 script:
-  - cd Xeski
-  - ./travis.sh
+  - cd Xeski/
+  - ./build.sh
