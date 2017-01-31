@@ -46,7 +46,7 @@ echo "                    "
 echo "                                        Compiling Xeski Kernel             "
 echo "                    "
 echo -e "****************************************************************************"
-make cyanogenmod_tomato-64_defconfig
+make lineageos_tomato_defconfig
 make Image -j8
 make dtbs -j8
 make modules -j8
