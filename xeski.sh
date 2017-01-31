@@ -83,7 +83,7 @@ cp $KERNEL_DIR/arch/arm64/boot/Image  $OUT_DIR/tools/zImage
 cp $KERNEL_DIR/arch/arm64/boot/dt.img  $OUT_DIR/tools/dt.img
 cp $MODULES_DIR/*.ko $OUT_DIR/modules/
 cd $OUT_DIR
-zip -r XeskiKernel_UBTC-v5.0.zip *
+zip -r XeskiKernel_UBTC-v5.1.zip *
 cd $KERNEL_DIR
 BUILD_END=$(date +"%s")
 DIFF=$(($BUILD_END - $BUILD_START))
