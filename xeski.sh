@@ -1,5 +1,5 @@
  #
- # Copyright © 2016, Aayush Jain   "AayushJainRd7"   <aayush835@gmail.com>
+ # Copyright © 2016, Aayush Jain   "AayushRd7"   <aayush835@gmail.com>
  #
  # Custom build script
  #
@@ -24,14 +24,12 @@ yellow='\033[0;33m'
 red='\033[0;31m'
 nocol='\033[0m'
 # Modify the following variable if you want to build
-export LD_LIBRARY_PATH="/home/aayushrd7/uber5.3/x86_64-linux-gnu/aarch64-linux-android/lib"
-export CROSS_COMPILE="/home/aayushrd7/uber5.3/bin/aarch64-linux-android-"
+export CROSS_COMPILE="/home/aayushrd7/uber/bin/aarch64-linux-android-"
 export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_BUILD_USER="AayushRd7"
-export KBUILD_BUILD_HOST="XeSki-PoWeR"
+export KBUILD_BUILD_HOST="XesKiMachine"
 export LOCALVERSION="-XesKi™-v5"
-STRIP="/home/aayushrd7/uber5.3/bin/aarch64-linux-android-strip"
 MODULES_DIR=/home/aayushrd7/XesKi/common
 OUT_DIR=/home/aayushrd7/XesKi/lettuce
 
