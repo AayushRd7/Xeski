@@ -32,8 +32,8 @@ export KBUILD_BUILD_USER="AayushRd7"
 export KBUILD_BUILD_HOST="XeSki-PoWeR"
 export LOCALVERSION="-XesKi™-v5"
 STRIP="/home/aayushrd7/uber5.3/bin/aarch64-linux-android-strip"
-MODULES_DIR=/home/aayushrd7/msm8916/common
-OUT_DIR=/home/aayushrd7/msm8916/lettuce
+MODULES_DIR=/home/aayushrd7/XesKi/common
+OUT_DIR=/home/aayushrd7/XesKi/lettuce
 
 compile_kernel ()
 {
