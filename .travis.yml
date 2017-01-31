@@ -10,10 +10,6 @@ before_install:
   - sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
   - sudo apt-get install -y ccache &&echo 'export PATH="/usr/lib/ccache:$PATH"' | tee -a ~/.bashrc &&source ~/.bashrc && echo $PATH
   - export USE_CCACHE=1
-  - mkdir ~/bin
-  - export PATH=~/bin:$PATH
-  - curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
-  - chmod a+x ~/bin/repo
 
 before_script:
 # Download the CAF Toolchains
@@ -23,5 +19,5 @@ before_script:
   - git clone https://github.com/AayushRd7/Xeski.git -b xos-7.1
 
 script:
-  - cd Xeski/
-  - ./build.sh
+ - cd Xeski/
+ - ./build.sh
