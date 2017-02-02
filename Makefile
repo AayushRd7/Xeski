@@ -397,9 +397,11 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
                    -Wno-unused-function \
 		   -fno-delete-null-pointer-checks \
 		   -Wno-format-security \
+	  	   -Wno-misleading-indentation \
                    -Wno-array-bounds \
- 		   -Wno-bool-compare 
-		   -fno-delete-null-pointer-checks\
+ 		   -Wno-bool-compare \
+	 	   -Wno-unused-const-variable \
+		   -fno-delete-null-pointer-checks \
 		   -std=gnu89 \
 		   $(ARM64_ARCH_OPT)
 
