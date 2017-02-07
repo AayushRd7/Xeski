@@ -63,6 +63,7 @@
 			enable-method = "qcom,arm-cortex-acc";
 			qcom,acc = <&acc0>;
 			next-level-cache = <&L2_0>;
+			sched-energy-costs = <&CPU_COST_0 &CLUSTER_COST_0>;
 			L2_0: l2-cache {
 			      compatible = "arm,arch-cache";
 			      cache-level = <2>;
@@ -77,6 +78,7 @@
 			enable-method = "qcom,arm-cortex-acc";
 			qcom,acc = <&acc1>;
 			next-level-cache = <&L2_0>;
+			sched-energy-costs = <&CPU_COST_0 &CLUSTER_COST_0>;
 		};
 
 		CPU2: cpu@2 {
@@ -86,6 +88,7 @@
 			enable-method = "qcom,arm-cortex-acc";
 			qcom,acc = <&acc2>;
 			next-level-cache = <&L2_0>;
+			sched-energy-costs = <&CPU_COST_0 &CLUSTER_COST_0>;
 		};
 
 		CPU3: cpu@3 {
@@ -95,8 +98,76 @@
 			enable-method = "qcom,arm-cortex-acc";
 			qcom,acc = <&acc3>;
 			next-level-cache = <&L2_0>;
+			sched-energy-costs = <&CPU_COST_0 &CLUSTER_COST_0>;
 		};
 	};
+
+
+		energy-costs {
+			CPU_COST_0: core-cost0 {
+				busy-cost-data = <
+					184    48
+					266    66
+					378   115
+					419   137
+					450   156
+					532   217
+					573   251
+					593   273
+				>;
+				idle-cost-data = <
+			  		0
+				>;
+			};
+			CPU_COST_1: core-cost1 {
+				busy-cost-data = <
+					256   155
+					358   174
+					512   289
+					614   428
+					716   602
+					829   835
+					921  1098
+		       			1024  1382
+				>;
+				idle-cost-data = <
+			  		0
+				>;
+			};
+			CLUSTER_COST_0: cluster-cost0 {
+				busy-cost-data = <
+					184    74
+					266   104
+					378   151
+					419   168
+					450   181
+					532   220
+					573   238
+					593   250
+				>;
+				idle-cost-data = <
+			 		110
+			 		105
+				>;
+			};
+			CLUSTER_COST_1: cluster-cost1 {
+				busy-cost-data = <
+					256    90
+					358   127
+					512   174
+					614   201
+					716   222
+					829   240
+					921   252
+		       			1024   259
+				>;
+				idle-cost-data = <
+					267
+					231
+				>;
+			};
+		};
+ 	};
 
 	soc: soc { };
 };
