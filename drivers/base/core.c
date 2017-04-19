@@ -1021,6 +1021,7 @@ int device_add(struct device *dev)
 	struct class_interface *class_intf;
 	struct kobject *glue_dir = NULL;
 	int error = -EINVAL;
+	struct kobject *glue_dir = NULL;
 
 	dev = get_device(dev);
 	if (!dev)
@@ -1161,8 +1162,12 @@ done:
 	kobject_del(&dev->kobj);
  Error:
 	cleanup_glue_dir(dev, glue_dir);
+<<<<<<< HEAD
 	if (parent)
 		put_device(parent);
+=======
+	put_device(parent);
+>>>>>>> d85d423... Update the Linux Base Version (3.10.49--->3.10.105)
 name_error:
 	kfree(dev->p);
 	dev->p = NULL;
